@@ -1,0 +1,86 @@
+main {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftColumn {
+  width: 100%;
+}
+
+/* Right column*/
+.rightColumn {
+  width: 100%;
+  padding-left: 0rem;
+}
+
+/*Popular news*/
+.popNews {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 1rem;
+  max-width: 500px;
+}
+
+.popNewsItems {
+  background-color: #aaa;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Fake image */
+.fakeImg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+/*Articles on the site*/
+article {
+  background-color: white;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+/*.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+*/
+
+/* Responsive layout - when the screen is bigger than 600px wide, make the one columns next to each other */
+@media screen and (min-width: 500px) {
+  .rightcolumn: {
+    float: right;
+    width: 25%;
+  }
+}
+
+/*main {
+    display: table;
+  }
+  .leftColumn {
+    width: 75%;
+    float: left;
+  }
+  .rightColumn {
+    width: 25%;
+    padding-left: 20px;
+    float: left;
+  }
+  .articles {
+    max-width: 50%;
+  }*/

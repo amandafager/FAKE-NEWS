@@ -1,0 +1,60 @@
+header {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--col-nav);
+  padding: 1.5rem;
+  font-family: var(--font-family);
+}
+
+/*Displays the date of today*/
+.dateOfDay {
+  padding-left: 1.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  background-color: orange;
+}
+
+h1 {
+  color: var(--text-col-nav);
+}
+
+.goToStart {
+  text-decoration: none;
+}
+
+.navDesk,
+ul,
+li,
+a {
+  display: block;
+  color: var(--text-col-nav);
+  padding: 0rem;
+}
+
+.navDesk > ul > li > a {
+  opacity: 0%;
+}
+
+.navDesk ul li a:hover {
+  color: orange;
+}
+
+@media screen and (min-width: 500px) {
+  .navDesk li {
+    display: inline-block;
+    padding: 0.2rem;
+  }
+  .navDesk > ul > li > a {
+    opacity: 100%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .navDesk li {
+    padding: 1.7rem;
+  }
+}
