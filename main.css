@@ -20,7 +20,6 @@ main {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-row-gap: 1rem;
-  max-width: 500px;
 }
 
 .popNewsItems {
@@ -41,7 +40,6 @@ main {
   background-color: white;
   padding: 1.5rem;
   margin-top: 1.5rem;
-  width: 100%;
 }
 
 /*Articles on the site*/
@@ -53,34 +51,31 @@ article {
   max-width: 800px;
 }
 
-/*.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.articles:last-of-type {
+  padding-bottom: 1.5rem;
 }
-*/
 
 /* Responsive layout - when the screen is bigger than 600px wide, make the one columns next to each other */
-@media screen and (min-width: 500px) {
-  .rightcolumn: {
-    float: right;
-    width: 25%;
+@media screen and (min-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row: 1;
+    grid-column-gap: 2rem;
+  }
+
+  .rightColumn {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+  }
+
+  .leftColumn {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  main {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
-
-/*main {
-    display: table;
-  }
-  .leftColumn {
-    width: 75%;
-    float: left;
-  }
-  .rightColumn {
-    width: 25%;
-    padding-left: 20px;
-    float: left;
-  }
-  .articles {
-    max-width: 50%;
-  }*/

@@ -44,41 +44,37 @@
         </nav>
     </header>
     <div class="dateOfDay"><?php echo date("l jS \of F Y")  ?> </div>
-    <main>
-        <section class="row">
-            <aside class="rightColumn">
-                <section class="card popNews">
-                    <h3>Populära nyheter</h3>
-                    <div class="popNewsItems">Fake news</div>
-                    <div class="popNewsItems">Fake news</div>
-                    <div class="popNewsItems">Fake news</div>
-                </section>
-            </aside>
-            <section class="articles leftColumn">
-                <article>
-                    <h2>TITLE HEADING</h2>
-                    <h5>Title description, Dec 7, 2017</h5>
-                    <div class="fakeImg" style="height:200px;">Image</div>
-                    <p>Some text..</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.o</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.o</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.o</p>
-                </article>
-                <article>
-                    <h2>TITLE HEADING</h2>
-                    <h5>Title description, Sep 2, 2017</h5>
-                    <div class="fakeImg" style="height:200px;">Image</div>
-                    <p>Some text..</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                </article>
-                </div>
-                <aside class="rightColumn">
-                    <section class="card">
-                        <h3>Follow Me</h3>
-                        <p>Some text..</p>
-                    </section>
-                </aside>
+    <main class="wrapper">
+        <aside class="rightColumn">
+            <section class="card popNews">
+                <h3>Populära nyheter</h3>
+                <div class="popNewsItems">Fake news</div>
+                <div class="popNewsItems">Fake news</div>
+                <div class="popNewsItems">Fake news</div>
             </section>
+            <section class="card follow">
+                <h3>Follow Us</h3>
+                <p>Some text..</p>
+            </section>
+        </aside>
+        <section class="articles leftColumn">
+            <article>
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="fakeImg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.o</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.o</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.o</p>
+            </article>
+            <article>
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeImg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </article>
+            </div>
         </section>
     </main>
     <footer>
