@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+:root {
+  --main-bg: rgb(222, 218, 218);
+  --font-family: "Roboto", sans-serif;
+  --col-nav: black;
+  --text-col-nav: white;
+}
+
+body {
+  background-color: var(--main-bg);
+  font-family: var(--font-family);
+}
