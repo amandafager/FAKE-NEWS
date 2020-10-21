@@ -1,10 +1,19 @@
 <?php
 
+declare(strict_types=1);
 // This is the file where you can keep your HTML markup. We should always try to
 // keep us much logic out of the HTML as possible. Put the PHP logic in the top
 // of the files containing HTML or even better; in another PHP file altogether.
 
-?>
+require __DIR__ . '/data.php';
+
+require __DIR__ . '/functions.php'; ?>
+
+
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,13 +38,13 @@
         <nav class="navDesk">
             <ul>
                 <li>
-                    <a href="#nyheter">Nyheter</a>
+                    <a href="#nyheter">News</a>
                 </li>
                 <li>
-                    <a href="#kultur">Kultur</a>
+                    <a href="#kultur">Culture</a>
                 </li>
                 <li>
-                    <a href="#ekonomi">Ekonomi</a>
+                    <a href="#ekonomi">Economi</a>
                 </li>
                 <li>
                     <a href="#sport">Sport</a>
@@ -54,7 +63,7 @@
                     <div class="pulse-ring"></div>
                 </div>-->
                 <!--<div class="ring"></div>-->
-                <h3>Populära nyheter</h3>
+                <h3>Popular news</h3>
                 <div class="popNewsItems">Fake news</div>
                 <div class="popNewsItems">Fake news</div>
                 <div class="popNewsItems">Fake news</div>
@@ -65,22 +74,16 @@
             </section>
         </aside>
         <section class="articles leftColumn">
-            <article>
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Month Day, Year</h5>
-                <div class="fakeImg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.o</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.o</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.o</p>
-            </article>
-            <article>
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Month Day, Year</h5>
-                <div class="fakeImg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            </article>
+            <?php foreach ($posts as $post) : ?>
+                <article>
+                    <h2><?php echo $post['title']; ?></h2>
+                    <h5><?php echo 'Author: ' .  $post['author']; ?>
+                        <br><?php echo 'Published date: ' . $post['published_date']; ?></h5>
+                    <div class="fakeImg" style="height:200px;">Image</div>
+                    <p><?php echo $post['content']  ?></p>
+                    <div class="countLikes"> <?php count </div>
+                </article>
+            <?php endforeach; ?>
             </div>
         </section>
     </main>
