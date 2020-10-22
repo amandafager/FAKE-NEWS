@@ -3,19 +3,16 @@ main {
   padding-right: 1.5rem;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
 .leftColumn {
   width: 100%;
 }
 
-/* Right column*/
 .rightColumn {
   width: 100%;
   padding-left: 0rem;
 }
 
-/*Popular news*/
+/*popular news feed*/
 .popNews {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -90,7 +87,6 @@ article {
   background-color: white;
   padding: 1.5rem;
   margin-top: 1.5rem;
-  width: 100%;
   max-width: 850px;
 }
 
@@ -98,7 +94,7 @@ article {
   padding-bottom: 1.5rem;
 }
 
-/* Responsive layout - when the screen is bigger than 600px wide, make the one columns next to each other */
+/* Responsive layout - when the screen is bigger than 800px wide, make the columns next to each other */
 @media screen and (min-width: 800px) {
   .wrapper {
     display: grid;

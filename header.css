@@ -37,6 +37,7 @@ a {
   padding: 0rem;
 }
 
+/*hiedes the desknav on mobil*/
 .navDesk > ul > li > a {
   opacity: 0%;
 }
@@ -49,9 +50,11 @@ a {
   .navDesk li {
     display: inline-block;
     padding: 0.2rem;
+    letter-spacing: 0.06rem;
   }
   .navDesk > ul > li > a {
     opacity: 100%;
+    text-decoration: none;
   }
 }
 @media screen and (min-width: 800px) {
