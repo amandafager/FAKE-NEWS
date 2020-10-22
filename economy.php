@@ -52,7 +52,7 @@ require __DIR__ . '/functions.php'; ?>
         <section class="articles leftColumn">
             <?php foreach ($posts as $post) :
 
-                if ($post['category'] === 'Culture') : ?>
+                if ($post['category'] === 'Economy') : ?>
                     <article>
                         <h3><?php echo $post['category']; ?></h3>
                         <h2><?php echo $post['title']; ?></h2>

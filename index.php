@@ -12,22 +12,22 @@ require __DIR__ . '/functions.php'; ?>
 
 <body>
     <header>
-        <a class="goToStart" href="#start">
+        <a class="goToStart" href="index.php">
             <h1>Fake News.</h1>
         </a>
         <nav class="navDesk">
             <ul>
                 <li>
-                    <a href="#nyheter">News</a>
+                    <a href="/index.php">News</a>
                 </li>
                 <li>
                     <a href="/culture.php">Culture</a>
                 </li>
                 <li>
-                    <a href="#ekonomi">Economi</a>
+                    <a href="/economy.php">Economy</a>
                 </li>
                 <li>
-                    <a href="#sport">Sport</a>
+                    <a href="/sport.php">Sport</a>
                 </li>
             </ul>
         </nav>
