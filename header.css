@@ -59,8 +59,13 @@ a {
 }
 @media screen and (min-width: 800px) {
   .navDesk li {
-    padding: 1.7rem;
+    padding: 1rem;
   }
+
+  .navDesk li:last-of-type {
+    padding-right: 1.5rem;
+  }
+
   .dateOfDay {
     padding-left: 3rem;
   }

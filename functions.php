@@ -26,6 +26,7 @@ function getAuthorById(int $post_id, array $authors): string
     foreach ($authors as $author) {
 
         if ($author['id'] === $post_id) {
+
             return $author['author'];
         }
     }
