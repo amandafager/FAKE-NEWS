@@ -1,4 +1,96 @@
+.hamburgermenu {
+  top: 24px;
+  right: 24px;
+  height: 50px;
+  z-index: 10;
+}
+
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1.5rem;
+  font-family: var(--font-family);
+}
+
+/*Displays the date of today*/
+.dateOfDay {
+  padding-left: 1.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1;
+  margin-top: 3.7rem;
+  background-color: rgb(112, 46, 205); /*orange;*/
+  /*margin-bottom: 2rem;*/
+  color: white;
+  font-size: 1rem;
+}
+
+h1 {
+  color: white;
+}
+
+.goToStart {
+  text-decoration: none;
+}
+
+.hamburger {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: 0;
+  position: absolute;
+  right: 1rem;
+  z-index: 4;
+  pointer-events: none;
+}
+
+header input {
+  opacity: 0;
+  z-index: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+header label {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+@media screen and (min-width: 500px) {
+  .hamburger {
+    /*right: 2rem;*/
+  }
+}
+@media screen and (min-width: 800px) {
+  /*.navDesk li {
+    padding: 1rem;
+  }*/
+
+  .navDesk li:last-of-type {
+    padding-right: 1.5rem;
+  }
+
+  .dateOfDay {
+    padding-left: 3rem;
+  }
+  header {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  h1 {
+  }
+}
+
+/*header {
   position: sticky;
   top: 0px;
   width: 100%;
@@ -11,12 +103,12 @@ header {
   font-family: var(--font-family);
 }
 
-/*Displays the date of today*/
+
 .dateOfDay {
   padding-left: 1.5rem;
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  background-color: rgb(112, 46, 205); /*orange;*/
+  background-color: rgb(112, 46, 205);/
   margin-bottom: 2rem;
   color: white;
   font-size: 1rem;
@@ -38,9 +130,10 @@ a {
   color: var(--text-col-nav);
   padding: 0rem;
 }
+*/
 
 /*hiedes the desknav on mobil*/
-.navDesk > ul > li > a {
+/*.navDesk > ul > li > a {
   opacity: 0%;
 }
 
@@ -92,3 +185,4 @@ a {
   h1 {
   }
 }
+*/

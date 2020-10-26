@@ -35,9 +35,3 @@ function sortByLikes(array $posts): array
     });
     return $posts;
 }
-
-
-/*usort($posts, function ($a, $b) {
-
-    return $b['likes'] <=> $a['likes'];
-});*/

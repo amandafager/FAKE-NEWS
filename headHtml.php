@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="typography.css">
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
     <title>FakeNews.</title>
@@ -16,6 +17,49 @@
 <body>
     <header>
         <a class="goToStart" href="index.php">
+            <h1>Fake News.</h1>
+        </a>
+        <section class="hamburgermenu">
+            <input id="menu" type="checkbox">
+            <label for="menu">
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list-item">
+                            <a href="/index.php">NEWS </a> </li>
+                        <li class="menu-list-item">
+                            <a href="/">Artists</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="/">Artwork</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="/">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="menu-contact-info">
+                        <ul>
+                            <li>Commodo Consequat 23</li>
+                            <li>info@photos.io</li>
+                            <li>+46 720 000 100</li>
+                        </ul>
+                    </div>
+                </nav>
+                <button aria-label="Open menu" class="hamburger">
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                        <g clip-path="url(#clip0)" fill="#fff">
+                            <path d="M20 40a20 20 0 1120-20 20.022 20.022 0 01-20 20zm0-38.75A18.75 18.75 0 1038.75 20 18.772 18.772 0 0020 1.25z" />
+                            <path d="M29.688 13.75H10.313a.625.625 0 110-1.25h19.374a.624.624 0 110 1.25zM29.688 20.625H10.313a.625.625 0 110-1.25h19.374a.624.624 0 110 1.25zM29.688 27.5H10.313a.625.625 0 110-1.25h19.374a.624.624 0 110 1.25z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <path fill="#fff" d="M0 0h40v40H0z" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+            </label>
+        </section>
+        <!-- <a class="goToStart" href="index.php">
             <h1>Fake News.</h1>
         </a>
         <nav class="navDesk">
@@ -48,6 +92,8 @@
                     </clipPath>
                 </defs>
             </svg>
-        </button>
+        </button>-->
+
+
     </header>
     <div class="dateOfDay"><?php echo date("l jS \of F Y")  ?> </div>
