@@ -18,12 +18,15 @@ require __DIR__ . '/headHtml.php';
     <aside class="rightColumn">
         <section class="card popNews">
             <h3>Popular news</h3>
-            <?php foreach ($posts as $post) : ?>
+            <?php foreach (sortByLikes($posts) as $post) : ?>
+
                 <div class="popNewsItems"> <?php echo $post['likes']; ?></div>
 
-                <?php if ($post['likes'] < 27) {
+                <?php if ($post['likes'] < 30) :
+
                     break;
-                }; ?>
+
+                endif; ?>
 
             <?php endforeach; ?>
         </section>
@@ -42,7 +45,6 @@ require __DIR__ . '/headHtml.php';
                     <br>
                     <br>
                     <p class="mainContent"><?php echo $post['content'];  ?></p>
-
                     <h5><?php echo 'Author: ' . getAuthorById($post['id'], $authors); ?>
                         <br><?php echo 'Published date: ' . $post['published_date']; ?></h5>
                     <svg class="star" width="25" height="25" viewBox="0 0 152 145" fill="none" xmlns="http://www.w3.org/2000/svg">

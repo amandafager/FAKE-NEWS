@@ -28,6 +28,14 @@ function getAuthorById(int $post_id, array $authors): string
     }
 }
 
+function sortByLikes(array $posts): array
+{
+    usort($posts, function ($a, $b) {
+        return $b['likes'] <=> $a['likes'];
+    });
+    return $posts;
+}
+
 
 /*usort($posts, function ($a, $b) {
 
