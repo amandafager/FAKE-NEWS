@@ -25,54 +25,18 @@ main {
   padding: 1rem;
 }
 
-/*.di_all_live__header-pulse-on > .pulse-ring {
-  box-sizing: border-box;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  border: 2px solid orange;
-  animation: 5.5s 0s infinite cubic-bezier(0.2, 0.54, 0.58, 0.7);
-}
-
-.di_all_live__header-pulse-on {
-  position: relative;
-  transform: translateY(-25px) translateX(-25px);
-  width: 10px;
-  height: 10px;
-  margin-left: 20px;
-  top: 5px;
-}
-
-di_all_live__header-pulse-on > .pulse-dot {
-  box-sizing: border-box;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  background-color: orange;
-}
-
-di_all_live__header-pulse-on > .pulse-ring:nth-child(2) {
-  animation-delay: -3s;
-}
-
-di_all_live__header-pulse-on > .pulse-ring:nth-child(3) {
-  animation-delay: -4s;
-}
-
-.ring {
-}*/
-
 /* Fake image */
 .fakeImg {
-  background-color: #aaa;
   width: 100%;
-  padding: 1rem;
+  height: 100%;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+}
+
+.fakeImg img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 /* Add a card effect for articles */
@@ -80,16 +44,62 @@ di_all_live__header-pulse-on > .pulse-ring:nth-child(3) {
   background-color: white;
   padding: 1.5rem;
   margin-top: 1.5rem;
+  box-shadow: 0px 0px 5px 0px rgb(191, 188, 188);
 }
 
 /*Articles on the site*/
 article {
   background-color: white;
-  padding: 1.5rem;
+  padding: 1.2rem;
   margin-top: 1.5rem;
   max-width: 850px;
+  padding-bottom: 3rem;
+  box-shadow: 0px 0px 5px 0px rgb(191, 188, 188);
+  /*border-radius: 3rem;*/
 }
 
+article h2 {
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  max-width: 30rem;
+  font-size: 2rem;
+}
+
+article h3 {
+  float: right;
+  padding-top: 0rem;
+  color: white;
+  padding: 0.3rem;
+  background-color: rgb(45, 148, 213);
+  border-radius: 0.4rem;
+  font-weight: 400;
+}
+
+article h5 {
+  line-height: 1.1rem;
+}
+
+p {
+  line-height: 1.7rem;
+}
+
+.preamble {
+  font-weight: 600;
+}
+
+.mainContent {
+  padding-bottom: 1rem;
+}
+
+.countLikes,
+.star {
+  float: right;
+}
+
+.star {
+  padding-left: 0.5rem;
+  margin-bottom: 2rem;
+}
 .articles:last-of-type {
   padding-bottom: 1.5rem;
 }

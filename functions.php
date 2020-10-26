@@ -8,17 +8,13 @@ require __DIR__ . '/data.php';
 // execute/run any functions in this file. Keep it dumb.
 
 
-usort($posts, function ($a, $b) {
-
-    return $b['published_date'] <=> $a['published_date'];
-});
-
-
-usort($posts, function ($a, $b) {
-
-    return $b['likes'] <=> $a['likes'];
-});
-
+function sortByDate(array $posts): array
+{
+    usort($posts, function ($a, $b) {
+        return $b['published_date'] <=> $a['published_date'];
+    });
+    return $posts;
+}
 
 function getAuthorById(int $post_id, array $authors): string
 {
@@ -31,3 +27,9 @@ function getAuthorById(int $post_id, array $authors): string
         }
     }
 }
+
+
+/*usort($posts, function ($a, $b) {
+
+    return $b['likes'] <=> $a['likes'];
+});*/

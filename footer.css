@@ -10,13 +10,7 @@
 }
 */
 
-.hamburger {
-  border: 0px;
-  background: transparent;
-}
-
 footer {
-  position: sticky;
   bottom: 0;
   width: 100%;
   height: 60px;
@@ -27,16 +21,6 @@ footer {
   padding: 1.5rem 1rem 1.5rem 1.5rem;
   font-family: var(--font-family);
   color: white;
-}
-
-.navMobil {
-  display: none;
-}
-
-@media screen and (min-width: 500px) {
-  .hamburger {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 800px) {
