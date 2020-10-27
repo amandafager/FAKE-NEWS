@@ -5,7 +5,7 @@
   top: 0;
   right: 0;
   transform: translateX(100%);
-  background-color: purple;
+  background-color: black;
   z-index: 2;
   padding: 1.5rem;
   padding-top: 4rem;
@@ -36,6 +36,7 @@
 .menu-contact-info ul {
   list-style: none;
   padding: 0;
+  color: white;
 }
 
 .menu-contact-info li {
@@ -47,4 +48,10 @@
 /* If the checkbox is checked, the menu will be displayed */
 header input[type="checkbox"]:checked + label .menu {
   transform: translateX(0);
+}
+
+@media screen and (min-width: 800px) {
+  header input[type="checkbox"]:checked + label .menu {
+    transform: translateX(65%);
+  }
 }

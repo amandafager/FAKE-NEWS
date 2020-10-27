@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <a class="goToStart" href="index.php">
+        <a class="goToStart" href="/index.php">
             <h1>Fake News.</h1>
         </a>
         <section class="hamburgermenu">
@@ -25,15 +25,15 @@
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-list-item">
-                            <a href="/index.php">NEWS </a> </li>
+                            <a href="/index.php">News </a> </li>
                         <li class="menu-list-item">
-                            <a href="/">Artists</a>
+                            <a href="/culture.php">Culture</a>
                         </li>
                         <li class="menu-list-item">
-                            <a href="/">Artwork</a>
+                            <a href="/economy.php">Economy</a>
                         </li>
                         <li class="menu-list-item">
-                            <a href="/">Contact</a>
+                            <a href="/sport.php">Sport</a>
                         </li>
                     </ul>
                     <div class="menu-contact-info">

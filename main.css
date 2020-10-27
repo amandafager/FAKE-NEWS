@@ -3,6 +3,14 @@ main {
   padding-right: 1.5rem;
 }
 
+.long-text {
+  display: none;
+}
+
+.show-more-button {
+  text-decoration: underline;
+}
+
 .leftColumn {
   width: 100%;
 }
@@ -15,14 +23,42 @@ main {
 /*popular news feed*/
 .popNews {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-row-gap: 1rem;
+  /*grid-template-rows: 1fr;*/
+  grid-row-gap: 0.7rem;
+  font-size: 1.2rem;
 }
 
 .popNewsItems {
-  background-color: #aaa;
+  background-color: rgb(243, 243, 243);
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 2fr 20px;
+  align-items: center;
+}
+
+.popNewsItems > span {
+  font-weight: bolder;
+  grid-column-end: 1;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+}
+
+.arrow {
+  grid-column-end: 3;
+  align-items: flex-end;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials > a > svg {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
 }
 
 /* Fake image */
@@ -53,7 +89,7 @@ article {
   padding: 1.2rem;
   margin-top: 1.5rem;
   max-width: 850px;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   box-shadow: 0px 0px 5px 0px rgb(191, 188, 188);
   /*border-radius: 3rem;*/
 }
@@ -67,16 +103,16 @@ article h2 {
 
 article h3 {
   float: right;
-  padding-top: 0rem;
   color: white;
-  padding: 0.3rem;
-  background-color: rgb(45, 148, 213);
-  border-radius: 0.4rem;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  background-color: gray; /*blå rgb(45, 148, 213);*/
+  border-radius: 0.3rem;
   font-weight: 400;
 }
 
 article h5 {
   line-height: 1.1rem;
+  padding-top: 1rem;
 }
 
 p {
@@ -91,15 +127,22 @@ p {
   padding-bottom: 1rem;
 }
 
-.countLikes,
 .star {
+  background: ;
+}
+article button {
   float: right;
+  width: 4rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 0.2rem;
+  border: 4px double #cccccc;
+  background-color: #ffffff;
 }
 
-.star {
-  padding-left: 0.5rem;
-  margin-bottom: 2rem;
-}
 .articles:last-of-type {
   padding-bottom: 1.5rem;
 }
