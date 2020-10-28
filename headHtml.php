@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/typography.css">
-    <link rel="stylesheet" href="/global.css">
-    <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/styles/typography.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/popNews.css">
+    <link rel="stylesheet" href="/styles/SoMe.css">
+    <link rel="stylesheet" href="/styles/posts.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="icon" href="/favicon/iconfake.svg" type="image/svg" />
     <title>FakeNews.</title>
 </head>
 
 <body>
     <header>
         <a class="goToStart" href="/index.php">
+            <img class="favicon" src="/favicon/iconfake.svg" alt="favicon">
             <h1>Fake News.</h1>
         </a>
         <section class="hamburgermenu">

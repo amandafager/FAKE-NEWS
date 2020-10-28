@@ -1,0 +1,137 @@
+/* Styles the articles on the site*/
+article {
+  background-color: white;
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+  max-width: 800px;
+  padding-bottom: 4.5rem;
+  box-shadow: 0px 0px 5px 0px rgb(191, 188, 188);
+}
+
+/*Title*/
+article h2 {
+  padding-bottom: 1.5rem;
+  padding-top: 3.5rem;
+  max-width: 30rem;
+  font-size: 2rem;
+}
+
+/*Category*/
+article h3 {
+  float: right;
+  color: white;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  background: linear-gradient(
+    180deg,
+    #c4c4c4 0%,
+    rgb(164, 164, 165) 20%,
+    #7b7b7d 100%
+  ); /*blå rgb(45, 148, 213);*/
+  border-radius: 0.3rem;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+}
+
+/*Author and Published date*/
+article h5 {
+  line-height: 0.3rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* The box that the images is put */
+.imgBox {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+/*Styles the images after the box size*/
+.imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/*Set the line-height for the content (preamble and mainContet)*/
+article p {
+  line-height: 1.8rem;
+}
+
+/*Styles the prample to be bolder than mainContent*/
+.preamble {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/*The read more 'button'. When you click on it it will show full article*/
+details {
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+/*When the Show Full Article not is open the 'hide Article' is hidden*/
+.close {
+  display: none;
+}
+
+/*Hides the 'Show Full Article' text when it its open*/
+details[open] .open {
+  display: none;
+}
+
+/*Now the 'Hide Article' shows up*/
+details[open] .close {
+  display: unset;
+}
+
+details[open] summary {
+  margin-bottom: 0.9em;
+}
+
+summary {
+  text-decoration: underline;
+  font-size: 1.4rem;
+  transition: 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.articles:last-of-type {
+  padding-bottom: 1.5rem;
+}
+
+/*Styles the likebutton*/
+.likeButton {
+  float: right;
+  width: 4rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: rgb(0, 0, 0) solid;
+  background-color: rgb(0, 0, 0);
+}
+
+.likeButton .heart {
+  margin-right: 0.5rem;
+  width: 25px;
+  height: 25px;
+}
+
+.likeButton .countLikes {
+  color: white;
+  font-size: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  .leftColumn {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  summary:hover {
+    color: var(--blue);
+  }
+}

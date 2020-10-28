@@ -1,0 +1,37 @@
+/*Popular news feed - styles it as a grid so that items are seperated */
+.popNews {
+  display: grid;
+  grid-row-gap: 0.7rem;
+  font-size: 1.2rem;
+}
+
+/*styles the title of newsfeed (Popular news)*/
+.popNews h3 {
+  font-weight: 500;
+  padding-bottom: 1.2rem;
+}
+
+/*styles it as a grid so that the title and arrow are seperated*/
+.popNewsItems {
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 20px 20px;
+  align-items: center;
+}
+
+.popNewsItems > h2 {
+  font-weight: bolder;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+}
+
+.arrow {
+  grid-column-end: 6;
+  align-items: flex-end;
+}
