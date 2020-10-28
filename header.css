@@ -1,10 +1,3 @@
-.hamburgermenu {
-  top: 24px;
-  right: 24px;
-  height: 50px;
-  z-index: 10;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -17,7 +10,7 @@ header {
   align-items: center;
   padding-left: 1.5rem;
   font-family: var(--font-family);
-  box-shadow: 0px 0px 5px 0px rgb(191, 188, 188);
+  box-shadow: 0px 0px 4px 0px rgb(27, 6, 104);
 }
 
 /*Displays the date of today*/
@@ -25,9 +18,9 @@ header {
   padding-left: 1.5rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
+  margin-bottom: 2rem;
   margin-top: 3.7rem;
-  background-color: #4e36df; /*rgb(112, 46, 205); orange;*/
-  /*margin-bottom: 2rem;*/
+  background-color: #4e36df;
   color: white;
   font-size: 0.9rem;
 }
@@ -36,19 +29,78 @@ h1 {
   color: white;
 }
 
+/*When you click on h1 it send you to the startpage*/
 .goToStart {
   text-decoration: none;
 }
 
+/* Wrapper for the hamburger*/
+.hamburgermenu {
+  top: 24px;
+  right: 24px;
+  height: 50px;
+  z-index: 10;
+  margin-right: 1.5rem;
+}
 .hamburger {
   width: 50px;
   height: 50px;
   background: none;
   border: 0;
   position: absolute;
-  right: 1rem;
+  right: 1.5rem;
   z-index: 4;
   pointer-events: none;
+}
+
+/* Styles the menu that shows if you touch the hamburger on mobil*/
+.menu {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  background-color: black;
+  z-index: 2;
+  padding: 1.5rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+
+/* styles the menu list - column*/
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-list-item {
+  margin-bottom: 3rem;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.menu-list-item a {
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.menu-contact-info ul {
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+
+.menu-contact-info li {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
 header input {
@@ -64,114 +116,57 @@ header label {
   display: block;
 }
 
-@media screen and (min-width: 500px) {
-  .hamburger {
-    /*right: 2rem;*/
-  }
+/* If the checkbox is checked, the menu will be displayed */
+header input[type="checkbox"]:checked + label .menu {
+  transform: translateX(0);
 }
+
 @media screen and (min-width: 800px) {
-  /*.navDesk li {
-    padding: 1rem;
-  }*/
-
-  .navDesk li:last-of-type {
-    padding-right: 1.5rem;
-  }
-
-  .dateOfDay {
-    padding-left: 3rem;
-  }
-  header {
-    padding-left: 3rem;
+  header input[type="checkbox"]:checked + label .menu {
+    transform: translateX(63%);
   }
 }
 
-@media screen and (min-width: 200px) {
-  h1 {
-  }
-}
-
-/*header {
-  position: sticky;
-  top: 0px;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--col-nav);
-  padding: 1.5rem;
-  font-family: var(--font-family);
-}
-
-
-.dateOfDay {
-  padding-left: 1.5rem;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  background-color: rgb(112, 46, 205);/
-  margin-bottom: 2rem;
-  color: white;
-  font-size: 1rem;
-}
-
-h1 {
-  color: var(--text-col-nav);
-}
-
-.goToStart {
-  text-decoration: none;
-}
-
-.navDesk,
-ul,
-li,
-a {
-  display: block;
-  color: var(--text-col-nav);
-  padding: 0rem;
-}
-*/
-
-/*hiedes the desknav on mobil*/
-/*.navDesk > ul > li > a {
-  opacity: 0%;
-}
-
-.navDesk ul li a:hover {
-  color: rgb(45, 148, 213);
-}
-
-.navMobil {
+/*Hides the menu for desktop when use mobil*/
+.navDesk {
   display: none;
 }
 
-.hamburger {
-  border: 0px;
-  background: transparent;
-}
+/*When width over 600px the hamburger menu hides and the menu for deskop displays*/
 
-@media screen and (min-width: 500px) {
-  .navDesk li {
-    display: inline-block;
-    padding: 0.2rem;
-    letter-spacing: 0.06rem;
-  }
-  .navDesk > ul > li > a {
-    opacity: 100%;
-    text-decoration: none;
-  }
-  .hamburger {
+@media screen and (min-width: 700px) {
+  .hamburgermenu {
     display: none;
   }
-}
-@media screen and (min-width: 800px) {
+
+  .navDesk {
+    display: flex;
+  }
+
   .navDesk li {
-    padding: 1rem;
+    display: inline-block;
+    padding: 0.5rem;
+    letter-spacing: 0.08rem;
   }
 
   .navDesk li:last-of-type {
-    padding-right: 1.5rem;
+    padding-right: 3.3rem;
+  }
+
+  /*Styles the items on the menubar*/
+  .navDesk a {
+    color: var(--text-col-nav);
+    transition: color 0.8s ease;
+    text-decoration: none;
+  }
+
+  .navDesk ul li a:hover {
+    color: rgb(45, 148, 213);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .navDesk li:last-of-type {
+    padding-right: 3.4rem;
   }
 
   .dateOfDay {
@@ -182,8 +177,5 @@ a {
   }
 }
 
-@media screen and (min-width: 200px) {
-  h1 {
-  }
+@media screen and (min-width: 1000px) {
 }
-*/

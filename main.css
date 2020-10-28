@@ -1,135 +1,184 @@
 main {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
 }
 
-.long-text {
-  display: none;
-}
-
-.show-more-button {
-  text-decoration: underline;
-}
-
-.leftColumn {
-  width: 100%;
-}
-
+/* styles the content that will flips on right side when on desktop. The max width is 800px*/
 .rightColumn {
-  width: 100%;
-  padding-left: 0rem;
+  max-width: 800px;
 }
 
-/*popular news feed*/
+/*Popular news feed - styles it as a grid so that items are seperated */
 .popNews {
   display: grid;
-  /*grid-template-rows: 1fr;*/
   grid-row-gap: 0.7rem;
   font-size: 1.2rem;
 }
 
+/*styles the title of newsfeed (Popular news)*/
+.popNews h3 {
+  font-weight: 500;
+  padding-bottom: 1.2rem;
+}
+
+/*styles it as a grid so that the title and arrow are seperated*/
 .popNewsItems {
   background-color: rgb(243, 243, 243);
   width: 100%;
   padding: 0.5rem;
   font-size: 1.5rem;
   display: grid;
-  grid-template-columns: 2fr 20px;
+  grid-template-columns: 1fr 1fr 1fr 20px 20px;
   align-items: center;
 }
 
-.popNewsItems > span {
+.popNewsItems > h2 {
   font-weight: bolder;
-  grid-column-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
   font-size: 1.2rem;
   font-style: italic;
   color: rgb(0, 0, 0);
 }
 
 .arrow {
-  grid-column-end: 3;
+  grid-column-end: 6;
   align-items: flex-end;
 }
 
+/*styles the box for the social media links*/
 .socials {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.socials > a {
+  padding: 0.7rem;
 }
 
 .socials > a > svg {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0px 2px 7px 2px rgba(43, 42, 45, 0.25);
 }
 
-/* Fake image */
-.fakeImg {
+.socials svg:hover {
+  box-shadow: unset;
+}
+
+/* The box that the images is put */
+.imgBox {
   width: 100%;
   height: 100%;
   margin-bottom: 1rem;
-  margin-top: 0rem;
 }
 
-.fakeImg img {
+/*Styles the images after the box size*/
+.imgBox img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
 
-/* Add a card effect for articles */
-.card {
+/*Styles for the content on the right side (on desktop) (Popular news and socials)  */
+.right {
   background-color: white;
   padding: 1.5rem;
   margin-top: 1.5rem;
   box-shadow: 0px 0px 5px 0px rgb(191, 188, 188);
 }
 
-/*Articles on the site*/
+/* Styles the articles on the site*/
 article {
   background-color: white;
   padding: 1.2rem;
   margin-top: 1.5rem;
-  max-width: 850px;
+  max-width: 800px;
   padding-bottom: 4rem;
   box-shadow: 0px 0px 5px 0px rgb(191, 188, 188);
-  /*border-radius: 3rem;*/
 }
 
+/*Title*/
 article h2 {
-  padding-bottom: 1rem;
-  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  padding-top: 3.5rem;
   max-width: 30rem;
   font-size: 2rem;
 }
 
+/*Category*/
 article h3 {
   float: right;
   color: white;
   padding: 0.3rem 0.5rem 0.3rem 0.5rem;
-  background-color: gray; /*blå rgb(45, 148, 213);*/
+  background: linear-gradient(
+    180deg,
+    #c4c4c4 0%,
+    rgb(164, 164, 165) 20%,
+    #7b7b7d 100%
+  ); /*blå rgb(45, 148, 213);*/
   border-radius: 0.3rem;
   font-weight: 400;
+  letter-spacing: 0.03rem;
 }
 
+/*Author and Published date*/
 article h5 {
-  line-height: 1.1rem;
-  padding-top: 1rem;
+  line-height: 0.3rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
 }
 
-p {
-  line-height: 1.7rem;
+/*Set the line-height for the content (preamble and mainContet)*/
+article p {
+  line-height: 1.8rem;
 }
 
+/*Styles the prample to be bolder than mainContent*/
 .preamble {
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
-.mainContent {
+/*The read more 'button'. When you click on it it will show full article*/
+details {
+  cursor: pointer;
   padding-bottom: 1rem;
 }
 
-.star {
-  background: ;
+/*When the Show Full Article not is open the 'hide Article' is hidden*/
+.close {
+  display: none;
 }
+
+/*Hides the 'Show Full Article' text when it its open*/
+details[open] .open {
+  display: none;
+}
+
+/*Now the 'Hide Article' shows up*/
+details[open] .close {
+  display: unset;
+}
+
+details[open] summary {
+  margin-bottom: 0.9em;
+}
+
+summary {
+  text-decoration: underline;
+  font-size: 1.4rem;
+  transition: 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.articles:last-of-type {
+  padding-bottom: 1.5rem;
+}
+
+/*Styles the likebutton*/
 article button {
   float: right;
   width: 4rem;
@@ -143,17 +192,17 @@ article button {
   background-color: #ffffff;
 }
 
-.articles:last-of-type {
-  padding-bottom: 1.5rem;
-}
-
-/* Responsive layout - when the screen is bigger than 800px wide, make the columns next to each other */
-@media screen and (min-width: 800px) {
+/* Responsive layout - when the screen is bigger than 1000px wide, the articles is dispaled on left side and social media and Popular news on right side.*/
+@media screen and (min-width: 1000px) {
   .wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-row: 1;
-    grid-column-gap: 2rem;
+    grid-column-gap: 3rem;
+  }
+
+  summary:hover {
+    color: rgb(45, 148, 213);
   }
 
   .rightColumn {
@@ -166,8 +215,17 @@ article button {
     grid-column-start: 1;
     grid-column-end: 1;
   }
+
   main {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+/*Responsiv design for Galaxy Fold*/
+@media screen and (max-width: 300px) {
+  main {
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
