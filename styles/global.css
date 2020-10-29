@@ -8,9 +8,11 @@
   --purple: #4730d1;
   --blue: rgb(45, 148, 213);
   --font-family: "Roboto", sans-serif;
-  --col-nav: black;
-  --text-col-nav: white;
-  --black: rgb(29, 28, 28);
+  --font-color-main: black;
+  --font-color-head: white;
+  --background-head: rgb(30, 30, 31);
+  --background-content: white;
+  --backgound-pop-items: rgb(243, 243, 243);
 }
 
 body {

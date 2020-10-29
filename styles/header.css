@@ -3,7 +3,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--black);
+  background-color: var(--background-head);
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -11,6 +11,7 @@ header {
   padding-left: 1.5rem;
   font-family: var(--font-family);
   box-shadow: 0px 0px 4px 0px rgb(0, 0, 0);
+  color: var(--font-color-head);
 }
 
 /*Displays the date of today*/
@@ -21,15 +22,15 @@ header {
   margin-bottom: 1rem;
   margin-top: 3.7rem;
   background-color: var(--purple);
-  color: white;
+  color: var(--font-color-head);
   font-size: 0.9rem;
   letter-spacing: 0.09rem;
 }
 
 h1 {
-  color: white;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
+  color: var(--font-color-head);
 }
 
 /*When you click on h1 it send you to the startpage*/
@@ -72,13 +73,14 @@ h1 {
   top: 0;
   right: 0;
   transform: translateX(100%);
-  background-color: black;
+  background-color: var(--black);
   z-index: 2;
   padding: 1.5rem;
   padding-top: 4rem;
   display: flex;
   flex-direction: column;
   transition: 0.7s ease;
+  background-color: var(--background-head);
 }
 
 /* styles the menu list - column*/
@@ -96,7 +98,7 @@ h1 {
 }
 
 .menu-list-item a {
-  color: white;
+  color: var(--font-color-head);
   font-weight: 300;
   text-decoration: none;
   transition: 0.5s ease;
@@ -105,7 +107,7 @@ h1 {
 .menu-contact-info ul {
   list-style: none;
   padding: 0;
-  color: white;
+  color: var(--font-color-head);
 }
 
 .menu-contact-info li {
@@ -160,7 +162,7 @@ header input[type="checkbox"]:checked + label .menu {
 
   /*Styles the items on the menubar*/
   .navDesk a {
-    color: var(--text-col-nav);
+    color: var(--white);
     transition: color 0.8s ease;
     text-decoration: none;
   }
@@ -184,7 +186,7 @@ header input[type="checkbox"]:checked + label .menu {
 
 /*Responsiv design for Galaxy Fold*/
 @media screen and (max-width: 300px) {
-  H1 {
+  h1 {
     font-size: 1.5rem;
   }
   .hamburgermenu {

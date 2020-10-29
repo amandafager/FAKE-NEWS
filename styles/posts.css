@@ -1,6 +1,6 @@
 /* Styles the articles on the site*/
 article {
-  background-color: white;
+  background-color: var(--background-content);
   padding: 1.2rem;
   margin-top: 1.5rem;
   max-width: 800px;
@@ -18,15 +18,6 @@ article h2 {
 /*Category*/
 article h3 {
   float: right;
-  color: black;
-  /*padding: 0.3rem 0.5rem 0.3rem 0.5rem;
-  background: linear-gradient(
-    180deg,
-    #c4c4c4 0%,
-    rgb(138, 138, 140) 20%,
-    #59595b 100%
-  );
-  border-radius: 0.3rem;*/
   font-weight: 400;
   letter-spacing: 0.03rem;
 }
@@ -34,7 +25,7 @@ article h3 {
 article .underline {
   margin-top: 1.8rem;
   height: 1px;
-  background-color: black;
+  background-color: var(--font-color-main);
 }
 
 /*Author and Published date*/
@@ -119,7 +110,6 @@ summary {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
   cursor: pointer;
   border-radius: 0.5rem;
   border: none;
