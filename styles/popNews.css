@@ -1,6 +1,7 @@
 /*Popular news feed - styles it as a grid so that items are seperated */
 .popNews {
   display: grid;
+  padding-top: 1.9rem;
   grid-row-gap: 0.7rem;
   font-size: 1.2rem;
 }
@@ -8,7 +9,12 @@
 /*styles the title of newsfeed (Popular news)*/
 .popNews h3 {
   font-weight: 500;
-  padding-bottom: 1.2rem;
+}
+
+.popNews > .underline {
+  height: 1px;
+  background-color: black;
+  margin-bottom: 0.8rem;
 }
 
 /*styles it as a grid so that the title and arrow are seperated*/

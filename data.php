@@ -46,7 +46,7 @@ $posts =
 
         [
             'id' => 2,
-            'title' => 'A forked purple lightning bolt, on black field speckled with four-pointed stars. Hear me roar!',
+            'title' => 'A forked purple lightning bolt, <br>on black field speckled with four-pointed stars. Hear me roar!',
             'published_date' => '2020-10-20 12:03',
             'likes' => 8,
             'preamble' => 'Pay the iron price. The bear and the maiden fair. All men must die. What is dead may never die. More pigeon pie, please. The Knight of Lemonwood. Words are like wind. A dream of Spring. Winter is coming.',
@@ -82,7 +82,7 @@ $posts =
 
         [
             'id' => 3,
-            'title' => 'When you play the game of thrones, you win or you die. The North remembers.',
+            'title' => 'When you play the game of thrones, you win or you die.<br> The North remembers.',
             'published_date' => '2020-10-28 11:15',
             'likes' => 12,
             'preamble' => 'Pay the iron price. The bear and the maiden fair. All men must die. What is dead may never die. More pigeon pie, please. The Knight of Lemonwood. Words are like wind. A dream of Spring. Winter is coming.',
@@ -130,7 +130,7 @@ $posts =
 
         [
             'id' => 5,
-            'title' => 'Our Sun Shines Bright. The winds of Winter.',
+            'title' => 'Our Sun Shines Bright. <br>The winds of Winter.',
             'published_date' => '2020-10-02 11:20',
             'likes' => 20,
             'preamble' => 'Pay the iron price. The bear and the maiden fair. All men must die. What is dead may never die. More pigeon pie, please. The Knight of Lemonwood. Words are like wind. A dream of Spring. Winter is coming.',

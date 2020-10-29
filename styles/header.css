@@ -3,7 +3,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: black;
+  background-color: var(--black);
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -16,18 +16,20 @@ header {
 /*Displays the date of today*/
 .dateOfDay {
   padding-left: 1.5rem;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  margin-bottom: 2rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
   margin-top: 3.7rem;
   background-color: var(--purple);
   color: white;
   font-size: 0.9rem;
+  letter-spacing: 0.09rem;
 }
 
 h1 {
   color: white;
   font-size: 1.8rem;
+  letter-spacing: 0.1rem;
 }
 
 /*When you click on h1 it send you to the startpage*/
@@ -76,7 +78,7 @@ h1 {
   padding-top: 4rem;
   display: flex;
   flex-direction: column;
-  transition: 0.5s ease;
+  transition: 0.7s ease;
 }
 
 /* styles the menu list - column*/
@@ -127,13 +129,7 @@ header label {
 
 /* If the checkbox is checked, the menu will be displayed */
 header input[type="checkbox"]:checked + label .menu {
-  transform: translateX(0);
-}
-
-@media screen and (min-width: 800px) {
-  header input[type="checkbox"]:checked + label .menu {
-    transform: translateX(63%);
-  }
+  transform: translateX(0%);
 }
 
 /*Hides the menu for desktop when use mobil*/
@@ -185,6 +181,11 @@ header input[type="checkbox"]:checked + label .menu {
     padding-left: 3rem;
   }
 }
-
-@media screen and (min-width: 1000px) {
+/*
+.css-transitions-only-after-page-load * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
+*/
