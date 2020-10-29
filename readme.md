@@ -3,14 +3,15 @@
 
 <h2>Description 
     
-<h4>First hand-in assignments in PHP. The assigment was to to build a news feed with fake news articles.
+First hand-in assignments in PHP. The assigment was to to build a news feed with fake news articles.
     
     
 <h2>Technologies
     
-<li><h4>PHP
-<li><h4>CSS
-<li><h4>HTML
+<li><PHP
+<li>CSS
+<li>HTML
 
 
 <h2>Installation
+    
