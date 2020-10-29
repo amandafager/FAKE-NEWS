@@ -1,11 +1,25 @@
-#FAKE NEWS
+FAKE NEWS
+---
 
-##Description 
-###First hand-in assignments in PHP. The assigment was to to build a news feed with fake news articles.
 
-##Technologies
-*PHP
-*CSS
-*HTML
+## Description 
+    
+First hand-in assignments in PHP. The assigment was to to build a news feed with fake news articles.
 
-##Installation
+    
+    
+## Technologies
+
+* PHP
+* CSS
+* HTML
+
+
+## Installation
+
+## Testers
+
+## Code Review
+
+## License
+    
