@@ -17,13 +17,13 @@ First hand-in assignments in PHP. The assigment was to to build a news feed with
 
 ## Installation
 
-1. ### Clone the repository 
+1. #### Clone the repository 
 ```   https://github.com/amandafager/FAKENEWS.git   ```
 
-2. ### Start a local server in the command line
+2. #### Start a local server in the command line
 ```   $ php -S localhost:8000/index.php   ```
 
-3. ### Open the index.php file in your browser
+3. #### Open the index.php file in your browser
 
 
 ## Testers
