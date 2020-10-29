@@ -6,12 +6,6 @@
   font-size: 1.2rem;
 }
 
-/*styles the page popNews - center the content*/
-.popPage {
-  margin-left: 13rem;
-  width: 100%;
-}
-
 /*styles the title of newsfeed (Popular news)*/
 .popNews h3 {
   font-weight: 500;
@@ -34,6 +28,10 @@
   align-items: center;
 }
 
+.popNewsItems {
+  text-decoration: none;
+}
+
 .popNewsItems > h2 {
   font-weight: bolder;
   grid-column-start: 1;
@@ -46,4 +44,22 @@
 .arrow {
   grid-column-end: 6;
   align-items: flex-end;
+}
+
+.title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 1000px) {
+  /*styles the page popNews - center the content*/
+  .popPage {
+    margin-left: 13rem;
+    width: 100%;
+  }
+
+  .title {
+    margin-left: 13rem;
+  }
 }

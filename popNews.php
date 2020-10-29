@@ -6,9 +6,11 @@ require __DIR__ . '/data.php';
 
 require __DIR__ . '/functions.php';
 
-require __DIR__ . '/headHtml.php';
+require __DIR__ . '/headHtml.php'; ?>
 
-foreach (array_slice(sortByLikes($posts), 0, 3) as $post) :
+<h2 class="title">Popular News</h2>
+
+<?php foreach (array_slice(sortByLikes($posts), 0, 3) as $post) :
 
     $category = $post['category'];
     $title = $post['title'];
@@ -26,8 +28,8 @@ foreach (array_slice(sortByLikes($posts), 0, 3) as $post) :
             <h3><?= $category; ?></h3>
             <div class="underline"></div>
             <h2><?= $title; ?></h2>
-            <h5><?= "Published date: $publishedDate;" ?></h5>
-            <h5><?= "Author: $author;" ?></h5>
+            <h5><?= "Published date: $publishedDate" ?></h5>
+            <h5><?= "Author: $author" ?></h5>
             <div class="imgBox"><img src="<?= $img; ?>"> </div>
             <details>
                 <summary><span class="open">Read Full Article</span><span class="close">Hide Article</span></summary>

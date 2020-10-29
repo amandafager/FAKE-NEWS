@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 require __DIR__ . '/data.php';
 
-// This is the file where you can keep all your functions. Remember to NOT
-// execute/run any functions in this file. Keep it dumb.
 
 //Order the posts/articles based on published date - latest news feed on top.
 function sortByDate(array $posts): array
@@ -18,7 +16,7 @@ function sortByDate(array $posts): array
     return $posts;
 }
 
-//When id in posts array and in auhtors array is same it return the authors name on his/her posts.
+//When id in posts array and in auhtors array is same it returns the authors name on his/her posts.
 function getAuthorById(int $post_id, array $authors): string
 {
 

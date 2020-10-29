@@ -181,11 +181,16 @@ header input[type="checkbox"]:checked + label .menu {
     padding-left: 3rem;
   }
 }
-/*
-.css-transitions-only-after-page-load * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
+
+/*Responsiv design for Galaxy Fold*/
+@media screen and (max-width: 300px) {
+  H1 {
+    font-size: 1.5rem;
+  }
+  .hamburgermenu {
+    margin-right: 1rem;
+  }
+  .hamburger {
+    margin-right: -0.5rem;
+  }
 }
-*/

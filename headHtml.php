@@ -43,7 +43,7 @@
                         </ul>
                         <div class="menu-contact-info">
                             <ul>
-                                <li>The lands of Westeros 27</li>
+                                <li>Westeros 27</li>
                                 <li>info@fakenews.io</li>
                                 <li>+46 700 000 000</li>
                             </ul>

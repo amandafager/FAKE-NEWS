@@ -30,8 +30,8 @@ require __DIR__ . '/aside.php';
             <h3><?= $category; ?></h3>
             <div class="underline"></div>
             <h2><?= $title; ?></h2>
-            <h5><?= "Published date: $publishedDate;" ?></h5>
-            <h5><?= "Author: $author;" ?></h5>
+            <h5><?= "Published date: $publishedDate" ?></h5>
+            <h5><?= "Author: $author" ?></h5>
             <div class="imgBox"><img src="<?= $img; ?>"> </div>
             <details>
                 <summary><span class="open">Read Full Article</span><span class="close">Hide Article</span></summary>
