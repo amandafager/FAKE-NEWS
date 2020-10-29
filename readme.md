@@ -1,11 +1,11 @@
 <h1>FAKE NEWS
 
-##Description 
-###First hand-in assignments in PHP. The assigment was to to build a news feed with fake news articles.
+<h2>Description 
+First hand-in assignments in PHP. The assigment was to to build a news feed with fake news articles.
 
-##Technologies
+<h2>Technologies
 *PHP
 *CSS
 *HTML
 
-##Installation
+<h2>Installation
