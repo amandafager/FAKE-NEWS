@@ -83,5 +83,5 @@
         </nav>
     </header>
     <div class="dateOfDay"><?php echo date("l jS \of F Y")  ?> </div>
-
-    <?php require __DIR__ . '/script.php'; ?>
+    <main class="wrapper">
+        <?php require __DIR__ . '/script.php'; ?>

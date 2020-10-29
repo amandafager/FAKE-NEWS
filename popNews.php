@@ -8,11 +8,7 @@ require __DIR__ . '/functions.php';
 
 require __DIR__ . '/headHtml.php';
 
-require __DIR__ . '/aside.php';
-
-?>
-
-<?php foreach (sortByDate($posts) as $post) :
+foreach (array_slice(sortByLikes($posts), 0, 3) as $post) :
 
     $category = $post['category'];
     $title = $post['title'];
@@ -25,7 +21,7 @@ require __DIR__ . '/aside.php';
 
 ?>
 
-    <section class="articles leftColumn">
+    <section class="articles leftColumn popPage">
         <article>
             <h3><?= $category; ?></h3>
             <div class="underline"></div>
@@ -50,4 +46,3 @@ require __DIR__ . '/aside.php';
     </section>
 <?php endforeach; ?>
 </main>
-<?php require __DIR__ . '/footer.php'; ?>

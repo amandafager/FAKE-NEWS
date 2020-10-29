@@ -90,6 +90,13 @@ details[open] .close {
   display: unset;
 }
 
+/*
+details[open] {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+*/
+
 details[open] summary {
   margin-bottom: 0.9em;
 }
