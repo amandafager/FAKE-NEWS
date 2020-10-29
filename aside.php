@@ -7,13 +7,17 @@ declare(strict_types=1); ?>
     <section class="right popNews">
         <h3>Popular News</h3>
         <div class="underline"></div>
-        <?php foreach (array_slice(sortByLikes($posts), 0, 3) as $post) : ?>
+
+        <?php foreach (array_slice(sortByLikes($posts), 0, 3) as $post) :
+            $title = $post['title']; ?>
+
             <a href="popNews.php" class="popNewsItems">
-                <h2><?php echo $post['title']; ?> </h2>
+                <h2><?= $title ?> </h2>
                 <svg class="arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="black" /></svg>
             </a>
         <?php endforeach; ?>
+
     </section>
     <section class="right">
         <section class="socials">
