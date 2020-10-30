@@ -9,7 +9,9 @@
     </div>
 </footer>
 <script>
-
+    window.addEventListener('load', () => {
+        document.body.classList.remove('loading');
+    });
 </script>
 </body>
 

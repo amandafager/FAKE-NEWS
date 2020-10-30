@@ -17,7 +17,7 @@
     <title>FakeNews.</title>
 </head>
 
-<body>
+<body class="loading">
     <header>
         <a class="goToStart" href="/index.php">
             <img class="favicon" src="/favicon/iconfake.svg" alt="favicon">
