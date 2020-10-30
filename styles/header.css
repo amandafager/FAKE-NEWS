@@ -12,7 +12,21 @@ header {
   font-family: var(--font-family);
   box-shadow: 0px 0px 4px 0px rgb(0, 0, 0);
   color: var(--font-color-head);
+  min-width: 350px;
 }
+
+/*
+@media screen and (min-width: 1600px) {
+  header {
+    justify-content: space-around;
+  }
+  .favicon {
+    margin-left: 1.8rem;
+  }
+  .navDesk li:last-of-type {
+    margin-right: 1rem;
+  }
+}*/
 
 /*Displays the date of today*/
 .dateOfDay {
@@ -25,6 +39,7 @@ header {
   color: var(--font-color-head);
   font-size: 0.9rem;
   letter-spacing: 0.09rem;
+  width: 100%;
 }
 
 h1 {

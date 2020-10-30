@@ -4,6 +4,12 @@ main {
   color: var(--font-color-main);
 }
 
+/*sets a max with on the main content*/
+.wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
 /* styles the content that will flips on right side when on desktop. The max width is 800px*/
 .rightColumn {
   max-width: 800px;
@@ -23,7 +29,7 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-row: 1;
-    grid-column-gap: 3rem;
+    grid-column-gap: 2rem;
   }
 
   .rightColumn {
