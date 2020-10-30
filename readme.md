@@ -27,6 +27,8 @@ First hand-in assignments in PHP. The assigment was to to build a news feed with
 
 
 ## Testers
+* Felix Östergren
+* Carolina Hagman 
 
 
 ## Code Review
