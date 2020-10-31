@@ -34,7 +34,7 @@ By Simon Lindstedt
 -   `general` I suggest that all img tags are accompanied by an alt tag.
 -   `general` Make sure that the php is closed properly when used in conjunction with html.
 -   `culture.php:51` Moving the last section tag inside the if-statment of the foreach-loop.
--   `economy.php:51 Same as above.
+-   `economy.php:51` Same as above.
 -   `sport.php:51` Same as above.
 -   `main.css:16-18` I suggest auto-margin for placing the popular news and socials in the centre of the screen at smaller sizes.
 -   `posts.css:154:-158` I suggest the same as above, for placing all of the articles in the middle at smaller sizes.
