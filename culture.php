@@ -21,8 +21,8 @@ require __DIR__ . '/aside.php';
     $preamble = $post['preamble'];
     $content = $post['content'];
     $likes = $post['likes'];
-
-    if ($category === 'Culture') : ?>
+?>
+    <?php if ($category === 'Culture') : ?>
 
         <section class="articles leftColumn">
             <article>
@@ -46,8 +46,8 @@ require __DIR__ . '/aside.php';
                     <p class="countLikes"><?= $likes; ?></p>
                 </button>
             </article>
-    <?php endif;
-endforeach; ?>
         </section>
-        </main>
-        <?php require __DIR__ . '/footer.php';
+    <?php endif; ?>
+<?php endforeach; ?>
+</main>
+<?php require __DIR__ . '/footer.php';

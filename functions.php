@@ -2,7 +2,8 @@
 
 declare(strict_types=1);
 
-require __DIR__ . '/data.php';
+// I belive this require can be removed, since it's not in use anywhere in this document // simon 
+// require __DIR__ . '/data.php';
 
 
 //Order the posts/articles based on published date - latest news feed on top.

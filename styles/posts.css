@@ -151,6 +151,13 @@ summary {
   summary:hover {
     color: var(--blue);
   }
+
+  /* added these lines for centering the content at smaller sizes // simon */
+  article {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   article h2 {
     font-size: 2rem;
   }

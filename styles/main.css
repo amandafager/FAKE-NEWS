@@ -13,6 +13,9 @@ main {
 /* styles the content that will flips on right side when on desktop. The max width is 800px*/
 .rightColumn {
   max-width: 800px;
+  /* added these lines for placing the content in the middle of the screen for smaller sizes // simon  */
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*Styles for the content on the right side (on desktop) (Popular news and socials)  */
