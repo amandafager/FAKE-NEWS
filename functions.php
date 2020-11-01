@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-require __DIR__ . '/data.php';
 
 
 //Order the posts/articles based on published date - latest news feed on top.

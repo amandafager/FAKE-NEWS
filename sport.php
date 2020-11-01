@@ -18,6 +18,7 @@ require __DIR__ . '/aside.php';
     $publishedDate = $post['published_date'];
     $author = getAuthorById($post['id'], $authors);
     $img = $post['img'];
+    $imgAlt = $post['imgAlt'];
     $preamble = $post['preamble'];
     $content = $post['content'];
     $likes = $post['likes'];
@@ -31,13 +32,13 @@ require __DIR__ . '/aside.php';
                 <h2><?= $title; ?></h2>
                 <h5><?= "Published date: $publishedDate" ?></h5>
                 <h5><?= "Author: $author" ?></h5>
-                <div class="imgBox"><img src="<?= $img; ?>"> </div>
+                <div class="imgBox"><img src="<?= $img; ?>" alt="<?= $imgAlt ?>"></div>
                 <details>
                     <summary><span class="open">Read Full Article</span><span class="close">Hide Article</span></summary>
                     <p class="preamble"><?= $preamble;  ?>
                         <br>
                         <br>
-                        <p class="mainContent"><?= $content;  ?></p>
+                        <p class="mainContent"><?= $content; ?></p>
                 </details>
                 <button class="likeButton">
                     <svg class="heart" width="20" height="20" viewBox="0 0 127 104" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,8 +47,8 @@ require __DIR__ . '/aside.php';
                     <p class="countLikes"><?= $likes; ?></p>
                 </button>
             </article>
-    <?php endif;
-endforeach; ?>
         </section>
-        </main>
-        <?php require __DIR__ . '/footer.php';
+    <?php endif; ?>
+<?php endforeach; ?>
+</main>
+<?php require __DIR__ . '/footer.php';

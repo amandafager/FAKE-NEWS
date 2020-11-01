@@ -11,8 +11,14 @@ main {
 }
 
 /* styles the content that will flips on right side when on desktop. The max width is 800px*/
+.articles {
+  max-width: 800px;
+  margin: auto;
+}
+
 .rightColumn {
   max-width: 800px;
+  margin: auto;
 }
 
 /*Styles for the content on the right side (on desktop) (Popular news and socials)  */
@@ -36,6 +42,7 @@ main {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
+    margin-top: 0rem;
   }
 
   main {
