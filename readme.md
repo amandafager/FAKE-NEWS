@@ -1,6 +1,4 @@
-<img alt="FakeNewsDesk" src="https://user-images.githubusercontent.com/70512941/119837666-19960000-bf03-11eb-84c6-f91a52d332eb.png" width="75%">
-
-<img alt="FakeNewsMob" src="https://user-images.githubusercontent.com/70512941/119838635-db4d1080-bf03-11eb-8b3a-33898e7fbbc7.png" width="20%">
+![fakenews](https://user-images.githubusercontent.com/70512941/119840327-316e8380-bf05-11eb-9ddd-6a72db93a0d9.png)
 
 ## FAKE NEWS
 
