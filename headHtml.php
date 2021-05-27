@@ -19,7 +19,7 @@
 
 <body class="loading">
     <header>
-        <a class="goToStart" href="/index.php">
+        <a class="goToStart" href="/news">
             <img class="favicon" src="/favicon/iconfake.svg" alt="favicon">
             <h1>Fake News.</h1>
         </a>
@@ -29,15 +29,16 @@
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-list-item">
-                            <a href="/index.php">News </a> </li>
-                        <li class="menu-list-item">
-                            <a href="/culture.php">Culture</a>
+                            <a href="/">News </a>
                         </li>
                         <li class="menu-list-item">
-                            <a href="/economy.php">Economy</a>
+                            <a href="/?category=Culture">Culture</a>
                         </li>
                         <li class="menu-list-item">
-                            <a href="/sport.php">Sport</a>
+                            <a href="/?category=Economy">Economy</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="/?category=Sport">Sport</a>
                         </li>
                     </ul>
                     <div class="menu-contact-info">
@@ -66,16 +67,16 @@
         <nav class="navDesk">
             <ul>
                 <li>
-                    <a href="/index.php">NEWS</a>
+                    <a href="/news">NEWS</a>
                 </li>
                 <li>
-                    <a href="/culture.php">CULTURE</a>
+                    <a href="/?category=Culture">CULTURE</a>
                 </li>
                 <li>
-                    <a href="/economy.php">ECONOMY</a>
+                    <a href="/?category=Economy">ECONOMY</a>
                 </li>
                 <li>
-                    <a href="/sport.php">SPORT</a>
+                    <a href="/?category=Sport">SPORT</a>
                 </li>
             </ul>
         </nav>

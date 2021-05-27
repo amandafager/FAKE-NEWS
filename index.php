@@ -10,6 +10,10 @@ require __DIR__ . '/headHtml.php';
 
 require __DIR__ . '/aside.php';
 
+if (isset($_GET['category'])) {
+    $category = $_GET['category'];
+    $posts = getArticlesByCategory($posts, $_GET['category']);
+}
 ?>
 
 <?php foreach (sortByDate($posts) as $post) :
@@ -23,9 +27,7 @@ require __DIR__ . '/aside.php';
     $preamble = $post['preamble'];
     $content = $post['content'];
     $likes = $post['likes'];
-
 ?>
-
     <section class="articles leftColumn">
         <article>
             <h3><?= $category; ?></h3>
@@ -39,7 +41,7 @@ require __DIR__ . '/aside.php';
                 <p class="preamble"><?= $preamble;  ?>
                     <br>
                     <br>
-                    <p class="mainContent"><?= $content; ?></p>
+                <p class="mainContent"><?= $content; ?></p>
             </details>
             <button class="likeButton">
                 <svg class="heart" width="20" height="20" viewBox="0 0 127 104" fill="none" xmlns="http://www.w3.org/2000/svg">

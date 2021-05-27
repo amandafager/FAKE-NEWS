@@ -2,7 +2,25 @@
 
 declare(strict_types=1);
 
+function getArticlesByCategory(array $posts, string $postCategory): array
+{
+    $postsByCategory = array();
+    foreach ($posts as $post) {
+        if ($post['category'] === $postCategory) {
+            array_push($postsByCategory, $post);
+        }
+    }
+    return $postsByCategory;
+}
 
+function getPostById(array $posts, int $id): array
+{
+    foreach ($posts as $post) {
+        if ($post['id'] === $id) {
+            return $post;
+        }
+    }
+}
 
 //Order the posts/articles based on published date - latest news feed on top.
 function sortByDate(array $posts): array

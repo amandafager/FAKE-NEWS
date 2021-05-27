@@ -10,11 +10,11 @@ declare(strict_types=1); ?>
 
         <?php foreach (array_slice(sortByLikes($posts), 0, 3) as $post) :
             $title = $post['title']; ?>
-
-            <a href="popNews.php" class="popNewsItems">
+            <a href="popNews.php?id=<?= $post['id']; ?>" class="popNewsItems">
                 <h2><?= $title ?> </h2>
                 <svg class="arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="black" /></svg>
+                    <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="black" />
+                </svg>
             </a>
         <?php endforeach; ?>
 

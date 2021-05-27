@@ -1,3 +1,7 @@
+<img alt="FakeNewsDesk" src="https://user-images.githubusercontent.com/70512941/119837666-19960000-bf03-11eb-84c6-f91a52d332eb.png" width="75%">
+
+<img alt="FakeNewsMob" src="https://user-images.githubusercontent.com/70512941/119838635-db4d1080-bf03-11eb-8b3a-33898e7fbbc7.png" width="20%">
+
 ## FAKE NEWS
 
 ## Description
@@ -14,11 +18,15 @@ First hand-in assignments in PHP. The assigment was to to build a news feed with
 
 1. #### Clone the repository
 
-    `https://github.com/amandafager/FAKENEWS.git`
+```
+git clone https://github.com/amandafager/FAKENEWS.git
+```
 
 2. #### Start a local server in the command line
 
-    `$ php -S localhost:8000/index.php`
+```
+php -S localhost:8000/index.php
+```
 
 3. #### Open the index.php file in your browser
 

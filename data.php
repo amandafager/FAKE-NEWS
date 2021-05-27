@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 $authors =
-
     [
         ['id' => 1, 'author' => 'Jon Snow'],
         ['id' => 2, 'author' => 'Arya Stark'],
@@ -12,10 +11,7 @@ $authors =
         ['id' => 5, 'author' => 'Tyrion Lannister'],
     ];
 
-
-
 $posts =
-
     [
         [
             'id' => 1,
@@ -27,7 +23,6 @@ $posts =
             'category' => 'Culture',
             'img' => 'images/culture1.jpg',
             'imgAlt' => 'Bookshelf filled with books.'
-
         ],
 
         [
@@ -40,7 +35,6 @@ $posts =
             'category' => 'Sport',
             'img' => 'images/sport1.jpg',
             'imgAlt' => 'A running race.'
-
         ],
 
         [
@@ -53,7 +47,6 @@ $posts =
             'category' => 'Economy',
             'img' => 'images/economy1.jpg',
             'imgAlt' => 'A maersk ship.'
-
         ],
 
         [
@@ -66,7 +59,6 @@ $posts =
             'category' => 'Economy',
             'img' => 'images/economy3.jpg',
             'imgAlt' => 'Dollar banknotes.'
-
         ],
 
         [
@@ -79,7 +71,6 @@ $posts =
             'category' => 'Sport',
             'img' => 'images/sport2.jpg',
             'imgAlt' => 'Ski competition.'
-
         ],
 
         [
@@ -92,7 +83,6 @@ $posts =
             'category' => 'Culture',
             'img' => 'images/culture2.jpg',
             'imgAlt' => 'Dj.'
-
         ],
 
         [
@@ -105,7 +95,6 @@ $posts =
             'category' => 'Culture',
             'img' => 'images/culture3.jpg',
             'imgAlt' => 'Dj.'
-
         ],
 
         [
@@ -118,7 +107,6 @@ $posts =
             'category' => 'Economy',
             'img' => 'images/economy2.jpg',
             'imgAlt' => 'High-rise buildings in the states.'
-
         ],
 
         [
@@ -131,8 +119,6 @@ $posts =
             'category' => 'Sport',
             'img' => 'images/sport3.jpg',
             'imgAlt' => 'Bicycle competition.'
-
-
         ],
 
         [
@@ -145,6 +131,5 @@ $posts =
             'category' => 'Sport',
             'img' => 'images/sport4.jpg',
             'imgAlt' => 'Man swimming butterfly.'
-
         ]
     ];
