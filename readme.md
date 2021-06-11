@@ -2,8 +2,6 @@
 
 ## FAKE NEWS
 
-## Description
-
 The assigment was to to build a news feed with fake news articles in PHP.
 
 ## Technologies
