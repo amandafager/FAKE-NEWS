@@ -2,7 +2,7 @@
 
 ## FAKE NEWS
 
-The assigment was to to build a news feed with fake news articles in PHP.
+My fist school project at Yrgo. The assigment was to to build a news feed with fake news articles in PHP.
 
 ## Technologies
 
